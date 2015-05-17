@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Такси в Финляндию</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,900,900italic,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+</head>
+
+
+
+<body>
+
+  <header class="page-header">
+    <h1 class="header--h1">
+        Поездки в Финляндию<br><span>- от дома до дома<br>
+      на комфортабельном микроавтобусе</span>
+    </h1>
+  </header>
+
+  <div class="page-main">
+    <div class="container">
+
+      <div class="destinations">
+
+        <div class="destinations__cities">
+          <div class="destinations__city  destinations__city--1">
+            <h2 class="header--h3">Лаппеенранта</h2>
+            <span class="destinations--price">2000 руб.</span>
+          </div>
+          <div class="destinations__city  destinations__city--2">
+            <h2 class="header--h3">Котка</h2>
+            <span class="destinations--price">2000 руб.</span>
+          </div>
+          <div class="destinations__city  destinations__city--3">
+            <h2 class="header--h3">Хельсинки</h2>
+            <span class="destinations--price">2000 руб.</span>
+          </div>
+        </div>
+
+
+        <div class="destinations__slider">
+          <div class="destinations__slide1">Лаппенранта - город в Финляндии. Ближайшие туры</div>
+          <div class="destinations__slide1">Котка - город в Финляндии. Ближайшие туры</div>
+          <div class="destinations__slide1">Хельсинки - город в Финляндии. Ближайшие туры</div>
+        </div>
+
+        <a class="btn" href="#">Другие направления</a>
+
+      </div>
+
+      
+
+      <div class="tours">
+
+        <div class="booking">
+
+          <h2 class="header--h2">Оставить заявку</h2> Фамилия Имя Количество человек Дети Дата Контактный телефон Комментарий
+
+
+          <form id="bookingForm">
+            <div class="fl1">
+              <div class="tmInput">
+                Имя
+                <input name="Name" placeholder="Name:" type="text" data-constraints="@NotEmpty @Required @AlphaSpecial">
+              </div>
+
+            </div>
+            <div class="fl1">
+              <div class="tmInput">
+                Email:
+                <input name="Email" placeholder="Email:" type="text" data-constraints="@NotEmpty @Required @Email">
+              </div>
+              <div class="tmInput">
+                Ваш контактный телефон:
+                <input name="Email" placeholder="Email:" type="text" data-constraints="@NotEmpty @Required @Email">
+              </div>
+
+            </div>
+
+
+            <label class="tmDatepicker">
+              Дата поездки
+              <input type="text" name="Check-in" placeholder="10/05/2014" data-constraints="@NotEmpty @Required @Date">
+            </label>
+            <div class="clear"></div>
+            <label class="tmDatepicker">
+              Дата возвращения (если необходимо)
+              <input type="text" name="Check-out" placeholder='20/05/2014' data-constraints="@NotEmpty @Date">
+            </label>
+
+            <div class="tmRadio">
+              <p>Comfort</p>
+              <input name="Comfort" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' checked/>
+              <span>Cheap</span>
+              <input name="Comfort" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
+              <span>Standart</span>
+              <input name="Comfort" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
+              <span>Lux</span>
+            </div>
+
+
+            <em>Количество взрослых</em>
+            <select name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+              <option>1</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+
+            <em>Дети</em>
+            <select name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+              <option>0</option>
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+            </select>
+
+            <div class="tmTextarea">
+              Комментарий
+              <textarea name="Message" placeholder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
+            </div>
+            <a href="#" class="btn" data-type="submit">Отправить заявку</a>
+          </form>
+
+          <p class="text">Спасибо! Наш оператор свяжется с вами в ближайшее время!</p>
+        </div>
+        
+
+
+        <div class="info">
+
+          <div class="info__tours">
+            <h2 class="header--h2">Индивидуальный тур</h2>
+            <p class="text">В нашей компании Вы можете заказать индивидуальный тур в любой город Финляндии. Совместно с Вами мы запланируем маршрут Вашей поездки, согласуем время выезда из Петербурга и время возвращения, вид транспорта. В назначенное время водитель заберет Вас с Вашего адреса (адресов) на 8-местном микроавтобусе или легковом автомобиле, на обратном пути он доставит Вас до Вашего адреса (адресов). Точная стоимость и условия поездки согласовываются при заказе.</p>
+          </div>
+
+          <div class="info__transport">
+            <h2 class="header--h2">Наш транспорт</h2>
+            <p class="text">Микроавтобус марки Мерседес 14 мест Зарядка для техники наши микроавтобусы Мерседес Спринтер имеют вместительное багажное отделение. Для детей в машине устанавливаются детские кресла в соответствии с возрастом.</p>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+
+  <footer class="page-footer">
+    <div class="container">
+      <p class="text">Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой.</p> 
+      <span class="footer__copyright">Copyright(c) 2015</span>
+    </div>
+  </footer>
+
+  <script>
+    $(function () {
+      $('#bookingForm').bookingForm({
+        ownerEmail: '#'
+      });
+    })
+    $(function () {
+      $('#bookingForm input, #bookingForm textarea').placeholder();
+    });
+  </script>
+
+  <!-- <script src="js/slideshow.js"></script>  -->
+
+</body>
+
+</html>
