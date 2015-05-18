@@ -1,10 +1,11 @@
 .page-header {
   position: relative;
-  @media(min-width: @screen--big) {
-    height: 775px;
-    background: @primary--dark url("../img/bkg.jpg") no-repeat 50% 50% fixed;
-  }
-
+  height: 775px;
+  background: @primary--dark url("../img/bkg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  //https://css-tricks.com/perfect-full-page-background-image/
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 }
 
 .header--h1 {
@@ -19,19 +20,13 @@
   display: block;
   font-weight: bold;
   text-align: center;
-  position: absolute;  
-  
+  position: absolute;
   color: #f1ebe5;
   text-shadow: 0 4px 9px #c4b59d, 0px -2px 1px #fff;
-  
-  
-  
-  
   & span {
     color: #fff;
     font-weight: normal;
     font-size: @font-size--h2;
-
   }
   &:before {
     width: 100px;
@@ -40,6 +35,5 @@
     display: block;
     background: url("../img/flag.jpg") no-repeat 100%;
     content: "";
-
   }
 }

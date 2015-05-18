@@ -91,6 +91,7 @@
               <input type="text" name="Check-out" placeholder='20/05/2014' data-constraints="@NotEmpty @Date">
             </label>
 
+           <!--
             <div class="tmRadio">
               <p>Comfort</p>
               <input name="Comfort" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' checked/>
@@ -99,28 +100,36 @@
               <span>Standart</span>
               <input name="Comfort" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
               <span>Lux</span>
-            </div>
+            </div> -->
 
 
-            <em>Количество взрослых</em>
+            Количество взрослых
             <select name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-              <option>1</option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
+              <option>4</option>
+               <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
             </select>
 
             <em>Дети</em>
             <select name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
               <option>0</option>
-              <option>0</option>
               <option>1</option>
               <option>2</option>
+              <option>3</option>
+              <option>4</option>
+               <option>5</option>
+              <option>6</option>
+              <option>7</option>
             </select>
 
             <div class="tmTextarea">
               Комментарий
-              <textarea name="Message" placeholder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
+              <textarea name="Message" placeholder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)' rows="10", cols="60"></textarea>
             </div>
             <a href="#" class="btn" data-type="submit">Отправить заявку</a>
           </form>
