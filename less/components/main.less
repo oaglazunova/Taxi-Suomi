@@ -53,11 +53,12 @@ body {
   text-shadow: 0 1px 0 #3c61ab;
   text-transform: uppercase;
   display: inline-block;
-  margin: 3em 0;
+  margin: 3em auto;
   padding: 1em 100px;
   position: relative;
   text-align: center;
   text-decoration: none;
+  z-index: 0;
   &:hover {
     background: #638ec8;
     background: linear-gradient(#638ec8, #99b6df);
@@ -67,7 +68,6 @@ body {
   }
   &:active {
     background: #638ec8;
-    background: linear-gradient(#638ec8, #99b6df);
     outline: solid 1px #6d94ce;
     box-shadow: inset 0 10px 15px 0 #4176c4;
     &::before {
@@ -108,6 +108,7 @@ body {
   padding: 0 0 2em;
   color: @grey--font;
   font-size: @font-size;
+  text-align: justify;
 }
 
 .tours {

@@ -24,41 +24,50 @@
     <div class="container">
 
       <div class="destinations">
-
         <div class="destinations__cities">
-          <div class="destinations__city  destinations__city--1">
+          <a class="destinations__city  destinations__city--1">
             <h2 class="header--h3">Лаппеенранта</h2>
             <span class="destinations--price">2000 руб.</span>
-          </div>
-          <div class="destinations__city  destinations__city--2">
+          </a>
+          <a class="destinations__city  destinations__city--2">
             <h2 class="header--h3">Котка</h2>
             <span class="destinations--price">2000 руб.</span>
-          </div>
-          <div class="destinations__city  destinations__city--3">
+          </a>
+          <a class="destinations__city  destinations__city--3">
             <h2 class="header--h3">Хельсинки</h2>
             <span class="destinations--price">2000 руб.</span>
-          </div>
+          </a>
         </div>
-
 
         <div class="destinations__slider">
-          <div class="destinations__slide1">Лаппенранта - город в Финляндии. Ближайшие туры</div>
-          <div class="destinations__slide1">Котка - город в Финляндии. Ближайшие туры</div>
-          <div class="destinations__slide1">Хельсинки - город в Финляндии. Ближайшие туры</div>
+          <div class="destinations__slide  destinations__slide--01">
+            <div class="destinations__slide-close-wrapper">
+              <a href="#" class="destinations__slide-close">✕</a>
+            </div>
+            <p class="text">Лаппенранта - город в Финляндии. Стоимость тура </p>
+            Ближайшие туры
+          </div>
+          <div class="destinations__slide  destinations__slide--02">
+            <div class="destinations__slide-close-wrapper"> <a href="#" class="destinations__slide-close">✕</a>
+            </div>
+            <p class="text">Котка - город в Финляндии. Стоимость тура </p>
+            Ближайшие туры
+          </div>
+          <div class="destinations__slide  destinations__slide--03">
+            <div class="destinations__slide-close-wrapper"> <a href="#" class="destinations__slide-close">✕</a>
+            </div>
+            <p class="text">Хельсинки - город в Финляндии. Стоимость тура</p>
+            Ближайшие туры
+          </div>
         </div>
-
         <a class="btn" href="#">Другие направления</a>
-
       </div>
 
-      
+
 
       <div class="tours">
-
         <div class="booking">
-
           <h2 class="header--h2">Оставить заявку</h2> Фамилия Имя Количество человек Дети Дата Контактный телефон Комментарий
-
 
           <form id="bookingForm">
             <div class="fl1">
@@ -90,26 +99,13 @@
               Дата возвращения (если необходимо)
               <input type="text" name="Check-out" placeholder='20/05/2014' data-constraints="@NotEmpty @Date">
             </label>
-
-           <!--
-            <div class="tmRadio">
-              <p>Comfort</p>
-              <input name="Comfort" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' checked/>
-              <span>Cheap</span>
-              <input name="Comfort" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
-              <span>Standart</span>
-              <input name="Comfort" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
-              <span>Lux</span>
-            </div> -->
-
-
             Количество взрослых
             <select name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
               <option>1</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
-               <option>5</option>
+              <option>5</option>
               <option>6</option>
               <option>7</option>
               <option>8</option>
@@ -122,21 +118,21 @@
               <option>2</option>
               <option>3</option>
               <option>4</option>
-               <option>5</option>
+              <option>5</option>
               <option>6</option>
               <option>7</option>
             </select>
 
             <div class="tmTextarea">
               Комментарий
-              <textarea name="Message" placeholder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)' rows="10", cols="60"></textarea>
+              <textarea name="Message" placeholder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)' rows="10" , cols="60"></textarea>
             </div>
             <a href="#" class="btn" data-type="submit">Отправить заявку</a>
           </form>
 
           <p class="text">Спасибо! Наш оператор свяжется с вами в ближайшее время!</p>
         </div>
-        
+
 
 
         <div class="info">
@@ -151,33 +147,22 @@
             <p class="text">Микроавтобус марки Мерседес 14 мест Зарядка для техники наши микроавтобусы Мерседес Спринтер имеют вместительное багажное отделение. Для детей в машине устанавливаются детские кресла в соответствии с возрастом.</p>
           </div>
         </div>
-        
+
       </div>
-      
+
     </div>
   </div>
-  
-  
+
+
 
   <footer class="page-footer">
     <div class="container">
-      <p class="text">Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой.</p> 
+      <p class="text">Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой.</p>
       <span class="footer__copyright">Copyright(c) 2015</span>
     </div>
   </footer>
 
-  <script>
-    $(function () {
-      $('#bookingForm').bookingForm({
-        ownerEmail: '#'
-      });
-    })
-    $(function () {
-      $('#bookingForm input, #bookingForm textarea').placeholder();
-    });
-  </script>
-
-  <!-- <script src="js/slideshow.js"></script>  -->
+  <script src="js/slider.js"></script>
 
 </body>
 

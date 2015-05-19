@@ -1,34 +1,58 @@
 .destinations {
   position: relative;
   z-index: 3;
-  
   &__cities {
     display: flex;
     justify-content: space-between;
     position: absolute;
     top: -200px;
   }
-  
   &__city {
     height: 400px;
     width: 300px;
     margin: 0 20px 0 0;
     border: 1px solid #fff;
     background: @primary;
-    &--1 {      
-    background: url("../img/city01.jpg") no-repeat;
+    cursor: pointer;
+    &--1 {
+      background: url("../img/city01.jpg") no-repeat;
     }
-    &--2 {      
-    background: url("../img/city02.jpg") no-repeat;
+    &--2 {
+      background: url("../img/city02.jpg") no-repeat;
     }
-    &--3 {      
-    background: url("../img/city03.jpg") no-repeat;
+    &--3 {
+      background: url("../img/city03.jpg") no-repeat;
     }
   }
-  &__slider {
-  display: none;
+  &__slide {
+    display: none;
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
+    background: #fff;
+    position: fixed;
+    top: 270px;
+    left: 0;
+    right: 0;
+    border: 5px solid rgba(1,1,1,.1);    
+    outline: 5px solid #fff;
+    z-index: 10;
   }
-  
+  &__slide-show {
+    display: block;
+  }
+  &__slide-close-wrapper {
+    position: relative;
+  }
+  &__slide-close {
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #000;
+    text-decoration: none;
+    font-size:@font-size--h2;
+  }
   & .btn {
     margin-top: 250px;
   }
