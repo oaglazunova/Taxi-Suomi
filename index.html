@@ -20,53 +20,98 @@
     </h1>
   </header>
 
+
+
   <div class="page-main">
     <div class="container">
 
-      <div class="destinations">
-        <div class="destinations__cities">
-          <a class="destinations__city  destinations__city--1">
-            <h2 class="header--h3">Лаппеенранта</h2>
-            <span class="destinations--price">2000 руб.</span>
-          </a>
-          <a class="destinations__city  destinations__city--2">
-            <h2 class="header--h3">Котка</h2>
-            <span class="destinations--price">2000 руб.</span>
-          </a>
-          <a class="destinations__city  destinations__city--3">
-            <h2 class="header--h3">Хельсинки</h2>
-            <span class="destinations--price">2000 руб.</span>
-          </a>
-        </div>
 
-        <div class="destinations__slider">
-          <div class="destinations__slide  destinations__slide--01">
-            <div class="destinations__slide-close-wrapper">
-              <a href="#" class="destinations__slide-close">✕</a>
-            </div>
+
+      <section class="destinations">
+        <div class="destinations__cities">
+          <a class="destinations__city  destinations__city--1" tabindex="1">
+            <h2 class="header--h3">Лаппеенранта<br>
+            <span class="destinations--price">1100 руб.</span></h2>
+          </a>
+          <div class="destinations__window  destinations__window--1">
             <p class="text">Лаппенранта - город в Финляндии. Стоимость тура </p>
-            Ближайшие туры
           </div>
-          <div class="destinations__slide  destinations__slide--02">
-            <div class="destinations__slide-close-wrapper"> <a href="#" class="destinations__slide-close">✕</a>
-            </div>
+          <a class="destinations__city  destinations__city--2" tabindex="1">
+            <h2 class="header--h3">Котка<br><span class="destinations--price">1200 руб.</span></h2>
+          </a>
+          <div class="destinations__window  destinations__window--2">
             <p class="text">Котка - город в Финляндии. Стоимость тура </p>
-            Ближайшие туры
           </div>
-          <div class="destinations__slide  destinations__slide--03">
-            <div class="destinations__slide-close-wrapper"> <a href="#" class="destinations__slide-close">✕</a>
-            </div>
-            <p class="text">Хельсинки - город в Финляндии. Стоимость тура</p>
-            Ближайшие туры
+          <a class="destinations__city  destinations__city--3" tabindex="1">
+            <h2 class="header--h3">Хельсинки<br><span class="destinations--price">1600 руб.</span></h2>
+          </a>
+          <div class="destinations__window  destinations__window--3">
+            <p class="text">Хельсинки - город в Финляндии. Стоимость тура </p>
           </div>
         </div>
-        <a class="btn" href="#">Другие направления</a>
-      </div>
+      </section>
+
+
+
+      <section class="prices">
+        <table class="prices__table">
+          <tr class="row">
+            <th class="col  col--1" colspan="2">
+              <p class="header--h3">Стоимость трансфера в Финляндию из Санкт-Петербурга</p>
+            </th>
+          </tr>
+          <tr class="row">
+            <td class="col  col--1">Трансфер в Хамину</td>
+            <td class="col  col--2">1200 руб</td>
+          </tr>
+          <tr class="row">
+            <td class="col  col--1">Трансфер в Котку</td>
+            <td class="col  col--2">1200 руб</td>
+          </tr>
+          <tr class="row">
+            <td class="col  col--1">Трансфер в Лаппеенранту</td>
+            <td class="col  col--2">1100 руб</td>
+          </tr>
+          <tr class="row">
+            <td class="col  col--1">Трансфер в Иматру</td>
+            <td class="col  col--2">1200 руб</td>
+          </tr>
+          <tr class="row">
+            <td class="col  col--1">Трансфер в Хельсинки</td>
+            <td class="col  col--2">1400 руб</td>
+          </tr>
+          <tr class="row">
+            <td class="col  col--1">Трансфер в Ловиису, Порвоо</td>
+            <td class="col  col--2">1400 руб</td>
+          </tr>
+          <tr class="row">
+            <td class="col  col--1">Трансфер в Эспоо</td>
+            <td class="col  col--2">1600 руб</td>
+          </tr>
+          <tr class="row">
+            <td class="col  col--1">Трансфер в Тампере</td>
+            <td class="col  col--2">2000 руб</td>
+          </tr>
+          <tr class="row">
+            <td class="col  col--1">Трансфер в Лахти</td>
+            <td class="col  col--2">1600 руб</td>
+          </tr>
+          <tr class="row">
+            <td class="col  col--1">Трансфер в Сало, Хамеенлинну</td>
+            <td class="col  col--2">1800-2000 руб</td>
+          </tr>
+          <tr class="row">
+            <td class="col  col--1">Трансфер в Турку</td>
+            <td class="col  col--2">2000 руб</td>
+          </tr>
+        </table>
+      </section>
 
 
 
       <div class="tours">
-        <div class="booking">
+
+        <section class="booking">
           <h2 class="header--h2">Оставить заявку</h2> Фамилия Имя Количество человек Дети Дата Контактный телефон Комментарий
 
           <form id="bookingForm">
@@ -86,7 +131,6 @@
                 Ваш контактный телефон:
                 <input name="Email" placeholder="Email:" type="text" data-constraints="@NotEmpty @Required @Email">
               </div>
-
             </div>
 
 
@@ -125,18 +169,17 @@
 
             <div class="tmTextarea">
               Комментарий
-              <textarea name="Message" placeholder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)' rows="10" , cols="60"></textarea>
+              <textarea name="Message" placeholder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)' rows="10" cols="60"></textarea>
             </div>
             <a href="#" class="btn" data-type="submit">Отправить заявку</a>
           </form>
 
           <p class="text">Спасибо! Наш оператор свяжется с вами в ближайшее время!</p>
-        </div>
+        </section>
 
 
 
-        <div class="info">
-
+        <section class="info">
           <div class="info__tours">
             <h2 class="header--h2">Индивидуальный тур</h2>
             <p class="text">В нашей компании Вы можете заказать индивидуальный тур в любой город Финляндии. Совместно с Вами мы запланируем маршрут Вашей поездки, согласуем время выезда из Петербурга и время возвращения, вид транспорта. В назначенное время водитель заберет Вас с Вашего адреса (адресов) на 8-местном микроавтобусе или легковом автомобиле, на обратном пути он доставит Вас до Вашего адреса (адресов). Точная стоимость и условия поездки согласовываются при заказе.</p>
@@ -146,7 +189,7 @@
             <h2 class="header--h2">Наш транспорт</h2>
             <p class="text">Микроавтобус марки Мерседес 14 мест Зарядка для техники наши микроавтобусы Мерседес Спринтер имеют вместительное багажное отделение. Для детей в машине устанавливаются детские кресла в соответствии с возрастом.</p>
           </div>
-        </div>
+        </section>
 
       </div>
 
@@ -162,7 +205,7 @@
     </div>
   </footer>
 
-  <script src="js/slider.js"></script>
+  <!-- <script src="js/slider.js"></script> -->
 
 </body>
 

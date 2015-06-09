@@ -5,6 +5,7 @@ body {
 }
 
 html {
+  font-size: 62.5%;
   box-sizing: border-box;
 }
 
@@ -44,32 +45,32 @@ body {
 
 // http://jsfiddle.net/volcanicpixels/udXXA/
 .btn {
-  background: #99b6df;
-  background: linear-gradient(#99b6df, #638ec8);
-  outline: solid 1px #6d94ce;
-  outline-bottom: solid 3px #3867ac;
-  box-shadow: inset 0 0 0 1px #bbcfeb;
+  background: @primary--lighter;
+  background: linear-gradient(@primary--lighter, @primary);
+  outline: solid 1px @primary;
+  outline-bottom: solid 3px @primary--dark;
+  box-shadow: inset 0 0 0 1px @primary--light;
   color: #fff;
-  text-shadow: 0 1px 0 #3c61ab;
+  text-shadow: 0 1px 0 @primary--dark;
   text-transform: uppercase;
   display: inline-block;
-  margin: 3em auto;
-  padding: 1em 100px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
   position: relative;
   text-align: center;
   text-decoration: none;
   z-index: 0;
   &:hover {
-    background: #638ec8;
-    background: linear-gradient(#638ec8, #99b6df);
-    outline: solid 1px #6d94ce;
-    outline-bottom: solid 3px #3867ac;
-    box-shadow: inset 0 0 0 1px #bbcfeb;
+    background: @primary;
+    background: linear-gradient(@primary, @primary--lighter);
+    outline: solid 1px @primary;
+    outline-bottom: solid 3px @primary--dark;
+    box-shadow: inset 0 0 0 1px @primary--light;
   }
   &:active {
-    background: #638ec8;
-    outline: solid 1px #6d94ce;
-    box-shadow: inset 0 10px 15px 0 #4176c4;
+    background: @primary;
+    outline: solid 1px @primary;
+    box-shadow: inset 0 10px 15px 0 @primary;
     &::before {
       padding: 1px 0 0;
     }
