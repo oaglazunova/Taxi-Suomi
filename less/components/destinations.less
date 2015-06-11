@@ -14,7 +14,7 @@
     background: #fff;
     z-index: 10;
     margin: auto;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
@@ -52,9 +52,7 @@
         display: block;
       }
     }
-    &:hover .header--h3 {      
-    top: 10px;
-    }
+    
   }
   & .header--h3 {
     display: inline-block;
@@ -104,6 +102,13 @@
       position: absolute;
       top: 0;
       width: 100%;
+    }
+    & span {
+      padding: .5rem 1rem;
+      background: white;
+      color: orangered;
+      border: 1px solid @primary--dark;
+      border-radius: 1rem;
     }
     
   }

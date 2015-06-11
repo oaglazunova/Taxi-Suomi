@@ -1,15 +1,22 @@
 .prices {
-  
-  padding: 250px 0 0;
-  
-&__table {
-    border-collapse: collapse;    
+  padding: 40px 0 80px;
+  margin: 250px 0 0;
+  text-align: center;
+  & .header--h2 {
+   
+  }
+  &__table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: left;
     & .col {
-      padding: 2rem 2rem;
-      
+      padding: 2rem 6rem;
       border: 1px solid @text--dividers;
-    }  
-    
-    
+    }
+    & .row {
+      &:nth-child(odd) {
+        background: @primary--light;
+      }
+    }
   }
 }
