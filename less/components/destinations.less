@@ -11,6 +11,7 @@
     display: none;
     width: 900px;
     height: 600px;
+    padding: 20px 40px;
     background: #fff;
     z-index: 10;
     margin: auto;
@@ -20,8 +21,11 @@
     bottom: 0;
     right: 0;
     cursor: auto;
-    border: 5px solid rgba(1, 1, 1, .1);
+    border: 5px solid @primary--darker;
     outline: 5px solid #fff;
+    & .text {
+      padding: 0 0 4rem;
+    }
   }
   &__city {
     height: 400px;
@@ -51,10 +55,9 @@
       &:focus~.destinations__window--3 {
         display: block;
       }
-    }    
+    }
   }
-  & .btn--accent {  
-    
+  & .btn--accent {
     height: 60px;
     width: 200px;
     padding: 0;
@@ -72,6 +75,6 @@
       color: orangered;
       border: 1px solid @primary--dark;
       border-radius: 1rem;
-    }    
+    }
   }
 }

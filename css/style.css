@@ -611,7 +611,7 @@ body {
 }
 
 .header--h2 {
-	margin: 0 0 4rem;
+	margin: 0 0 3rem;
 	color: #294979;
 	font-size: 2.8rem;
 }
@@ -694,6 +694,7 @@ body {
 	display: none;
 	width: 900px;
 	height: 600px;
+	padding: 20px 40px;
 	background: #fff;
 	z-index: 10;
 	margin: auto;
@@ -703,8 +704,12 @@ body {
 	bottom: 0;
 	right: 0;
 	cursor: auto;
-	border: 5px solid rgba(1, 1, 1, 0.1);
+	border: 5px solid #294979;
 	outline: 5px solid #fff;
+}
+
+.destinations__window .text {
+	padding: 0 0 4rem;
 }
 
 .destinations__city {
@@ -773,7 +778,7 @@ body {
 }
 
 .prices__table {
-	margin: 0 auto;
+	margin: 0 auto 2rem;
 	border-collapse: collapse;
 	text-align: left;
 }
@@ -803,6 +808,15 @@ body {
 
 .info__transport {
 	width: 45%;
+}
+
+.info .text {
+	margin: 0 auto 4rem;
+}
+
+.info img {
+	width: 400px;
+	margin: 0 auto 2rem;
 }
 
 .booking {
@@ -898,12 +912,42 @@ body {
 .page-footer {
 	padding: 20px 0 20px;
 	background: #152740;
+	position: relative;
 	text-align: center;
+}
+
+.page-footer:before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 5px;
+	background: #fb8c00;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.page-footer:after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 5px;
+	background: #fb8c00;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
 .page-footer .text {
 	padding: 0 0 20px;
 	text-align: center;
+}
+
+.page-footer__copyright {
+	color: #e0e8f4;
+	font-size: 1.4rem;
 }
 
 @media (min-width: 700px) {
