@@ -501,7 +501,6 @@ body {
 }
 
 .container {
-	width: 90%;
 	margin: 0 auto;
 	border: 1px solid transparent;
 	position: relative;
@@ -638,8 +637,8 @@ body {
 .page-header {
 	position: relative;
 	height: 775px;
+	margin: 0 auto;
 	background: #152740 url("../img/bkg.jpg") no-repeat center center fixed;
-	background-size: cover;
 }
 
 .header--h1 {
