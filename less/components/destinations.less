@@ -4,14 +4,32 @@
   &__cities {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
     position: absolute;
-    top: -200px;
+    top: -420px;
+    left: 0;
+    right: 0;
+    @media(min-width: @screen--small) {
+      flex-direction: row;
+      width: auto;
+      top: -50px;
+    }
+     @media(min-width: @screen--medium) {
+       
+      top: -200px;
+     }
+    & .destinations__city--3 {
+       @media(min-width: @screen--small) {
+      margin: 0;}
+    }
   }
   &__window {
     display: none;
-    width: 900px;
-    height: 600px;
-    padding: 20px 40px;
+    width: 95%;
+    //  height: 600px;
+    padding: 10px 20px;
     background: #fff;
     z-index: 10;
     margin: auto;
@@ -23,52 +41,79 @@
     cursor: auto;
     border: 5px solid @primary--darker;
     outline: 5px solid #fff;
+    @media(min-width: @screen--small) {
+      width: 900px;
+      height: 600px;
+      padding: 20px 40px;
+    }
     & .text {
-      padding: 0 0 4rem;
+      padding: 0 0 2rem;
+      font-size: @font-size--small;
+      @media(min-width: @screen--small) {
+        padding: 0 0 4rem;
+        font-size: @font-size;
+      }
     }
   }
   &__city {
-    height: 400px;
-    width: 300px;
-    margin: 0 20px 0 0;
+    height: 300px;
+    width: 250px;
+    margin: 0 auto 10px;
     border: 1px solid #fff;
     background: @primary;
+    background-size: 20px 20px;
     pointer-events: all;
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    @media(min-width: @screen--small) {
+      margin: 0 10px 0 0;      
+    }
+    @media(min-width: @screen--medium) {
+      height: 400px;
+      width: 300px;
+      margin: 0 20px 0 0;
+    }   
     &--1 {
       background: url("../img/city01.jpg") no-repeat;
+      background-size: 100% 100%;
       &:focus~.destinations__window--1 {
         display: block;
       }
     }
     &--2 {
       background: url("../img/city02.jpg") no-repeat;
+      background-size: 100% 100%;
       &:focus~.destinations__window--2 {
         display: block;
       }
     }
     &--3 {
       background: url("../img/city03.jpg") no-repeat;
-      margin: 0;
+      background-size: 100% 100%;
+      
       &:focus~.destinations__window--3 {
         display: block;
       }
     }
   }
   & .btn--accent {
-    height: 60px;
-    width: 200px;
+    height: 40px;
+    width: 140px;
     padding: 0;
     margin: auto;
-    line-height: 60px;
+    line-height: 40px;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: 0;
+    @media(min-width: @screen--small) {
+      height: 60px;
+      width: 200px;
+      line-height: 60px;
+    }
     & span {
       padding: .5rem 1rem;
       background: white;

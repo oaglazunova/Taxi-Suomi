@@ -18,6 +18,7 @@
         Поездки в Финляндию<br><span>- от дома до дома<br>
       на комфортабельном микроавтобусе</span>
     </h1>
+   
   </header>
 
 
@@ -64,7 +65,7 @@
           </a>
           <div class="destinations__window  destinations__window--3">
             <h2 class="header--h2">Лаппеэнранта</h2>
-            <p class="text">Ла́ппеэнранта (фин. Lappeenranta), или Вильманстранд (швед. Villmanstrand) — город и муниципалитет в Восточной Финляндии, административный, экономический и культурный центр провинции Южная Карелия. Лаппеенранта расположена в живописном туристическом регионе, на берегу озера Саймаа, поблизости от других популярных городов, таких как Иматра, Коувола и Савонлинна.Это небольшой, но оживленный финский город, который находится всего в трех часах езды от Санкт-Петербурга. Город является тринадцатым по величине в Финляндии. На сегодняшний день население Лаппеенранты составляет 73 000 человек, из которых 15 000 – студенты, поэтому в городе всегда кипит жизнь.
+            <p class="text">Ла́ппеэнранта (фин. Lappeenranta), или Вильманстранд (швед. Villmanstrand) — город и муниципалитет в Восточной Финляндии, административный, экономический и культурный центр провинции Южная Карелия. Лаппеенранта расположена в живописном туристическом регионе, на берегу озера Сайма, поблизости от других популярных городов, таких как Иматра, Коувола и Савонлинна.Это небольшой, но оживленный финский город, который находится всего в трех часах езды от Санкт-Петербурга. Город является тринадцатым по величине в Финляндии. На сегодняшний день население Лаппеенранты составляет 73 000 человек, из которых 15 000 – студенты, поэтому в городе всегда кипит жизнь.
               <br>
               <br> Лаппеэнранта любима и посещаема российскими туристами даже больше, чем столица Хельсинки. Во-первых, Лаппеенранта ближе: расстояние от МАПП Брусничное всего 25 километров, от пропускного пункта Торфяновка – 60 км. Более всего здесь востребованы возможности шоппинга и однодневных туров с посещением магазинов или аквапарка с отправлением ранним утром и возвращением вечером.
               <br>
@@ -150,21 +151,21 @@
 
 
     <section class="booking">
-      <form id="bookingForm">
+      <form>
         <h2 class="header--h2">Оставить заявку</h2>
         <label>
           <span class="text">Имя</span>
-          <input type="text" name="Name" placeholder="Имя:" data-constraints="@NotEmpty @Required @AlphaSpecial">
+          <input type="text" name="Name" placeholder="Имя:">
         </label>
 
         <label>
           <span class="text">Email:</span>
-          <input type="email" name="email" placeholder="Email:" data-constraints="@NotEmpty @Required @Email">
+          <input type="email" name="email" placeholder="Email:">
         </label>
 
         <label>
           <span class="text">Ваш контактный телефон:</span>
-          <input type="tel" name="tel" placeholder="Телефон:" data-constraints="@NotEmpty @Required @Phone">
+          <input type="tel" name="tel" placeholder="Телефон:">
         </label>
 
         <div class="booking__dates">
@@ -188,7 +189,7 @@
           <div class="booking__col1">
             <label>
               <span class="text">Количество взрослых:&nbsp;</span>
-              <select name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+              <select name="Adults">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -204,7 +205,7 @@
           <div class="booking__col2">
             <label>
               <span class="text">Количество детей:&nbsp;</span>
-              <select name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+              <select name="Children">
                 <option>0</option>
                 <option>1</option>
                 <option>2</option>

@@ -1,30 +1,43 @@
 .page-header {
-  position: relative;
+ // position: relative;
   height: 775px;
-  margin: 0 auto;
+  // margin: 0 auto;
   background: @primary--dark url("../img/bkg.jpg") no-repeat center center fixed;
   //background-size: cover;  
 }
 
-.header--h1 {
-  width: 940px;
-  margin: 0 0 0 -470px;
-  font-size: @font-size--h1;
-  top: 10%;
-  left: 50%;
+.header--h1 {  
+ padding: 50px 0 0;
+  margin: 0 auto;
+  
   z-index: 2;
-  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-family: @font-family--h1;
+  font-size: @font-size--h2;
   text-transform: uppercase;
-  display: block;
+ // display: block;
   font-weight: bold;
   text-align: center;
-  position: absolute;
   color: #f1ebe5;
   text-shadow: 0 4px 9px #c4b59d, 0px -2px 1px #fff;
+ 
+  
+   @media(min-width: @screen--small) {
+  //   width: 940px;
+  //   margin: 0 0 0 -470px;
+     padding: 140px 0 0;
+  font-size: @font-size--h1;
+     
+ 
+  }
+  
   & span {
     color: #fff;
     font-weight: normal;
+    font-size: @font-size--h3;
+    @media(min-width: @screen--small) {
+      
     font-size: @font-size--h2;
+    }
   }
   &:before {
     width: 100px;
