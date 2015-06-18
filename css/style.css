@@ -670,6 +670,7 @@ body {
 }
 
 .destinations {
+	padding: 0 0 500px;
 	position: relative;
 	z-index: 3;
 }
@@ -725,6 +726,7 @@ body {
 	cursor: pointer;
 	position: relative;
 	overflow: hidden;
+	box-shadow: #555 0 3px 7px;
 }
 
 .destinations__city--1 {
@@ -778,7 +780,6 @@ body {
 
 .prices {
 	padding: 40px 0 20px;
-	margin: 480px 0 0;
 	text-align: center;
 }
 
@@ -833,7 +834,8 @@ body {
 }
 
 .booking form {
-	width: 300px;
+	min-width: 300px;
+	width: 90%;
 	padding: 40px 0 0;
 	margin: 0 auto;
 }
@@ -985,12 +987,16 @@ body {
 	font-size: 2.8rem;
 }
 
+.destinations {
+	padding: 0 0 150px;
+}
+
 .destinations__cities {
 	-webkit-flex-direction: row;
 	-ms-flex-direction: row;
 	flex-direction: row;
 	width: auto;
-	top: -50px;
+	top: -150px;
 }
 
 .destinations__cities .destinations__city--3 {
@@ -1020,7 +1026,6 @@ body {
 
 .prices {
 	padding: 40px 0 80px;
-	margin: 250px 0 0;
 }
 
 .prices__table .col {
@@ -1076,6 +1081,10 @@ body {
 
 .btn--accent {
 	padding: 2rem 4rem;
+}
+
+.destinations {
+	padding: 0 0 250px;
 }
 
 .destinations__cities {

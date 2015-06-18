@@ -3,11 +3,10 @@
   justify-content: space-between;
   flex-direction: column;
   padding: 0 0 40px;
-   @media(min-width: @screen--small) {
-     
-  flex-direction: row;
-  padding: 0 0 80px;
-   }
+  @media(min-width: @screen--small) {
+    flex-direction: row;
+    padding: 0 0 80px;
+  }
   &__tours {
     width: 100%;
     @media(min-width: @screen--small) {
@@ -22,12 +21,15 @@
   }
   & .text {
     margin: 0 auto 2rem;
-    @media(min-width: @screen--small) {margin: 0 auto 4rem;}
+    @media(min-width: @screen--small) {
+      margin: 0 auto 4rem;
+    }
   }
   & img {
     width: 300px;
     margin: 0 auto 2rem;
-     @media(min-width: @screen--medium) {
-    width: 400px;}
+    @media(min-width: @screen--medium) {
+      width: 400px;
+    }
   }
 }

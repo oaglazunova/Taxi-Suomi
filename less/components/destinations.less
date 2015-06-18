@@ -1,6 +1,13 @@
 .destinations {
+  padding: 0 0 500px;
   position: relative;
   z-index: 3;
+  @media(min-width: @screen--small) {
+    padding: 0 0 150px;
+  }
+  @media(min-width: @screen--medium) {
+    padding: 0 0 250px;
+  }
   &__cities {
     display: flex;
     justify-content: space-between;
@@ -14,15 +21,15 @@
     @media(min-width: @screen--small) {
       flex-direction: row;
       width: auto;
-      top: -50px;
+      top: -150px;
     }
-     @media(min-width: @screen--medium) {
-       
+    @media(min-width: @screen--medium) {
       top: -200px;
-     }
+    }
     & .destinations__city--3 {
-       @media(min-width: @screen--small) {
-      margin: 0;}
+      @media(min-width: @screen--small) {
+        margin: 0;
+      }
     }
   }
   &__window {
@@ -66,14 +73,15 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    box-shadow: #555 0 3px 7px;
     @media(min-width: @screen--small) {
-      margin: 0 10px 0 0;      
+      margin: 0 10px 0 0;
     }
     @media(min-width: @screen--medium) {
       height: 400px;
       width: 300px;
       margin: 0 20px 0 0;
-    }   
+    }
     &--1 {
       background: url("../img/city01.jpg") no-repeat;
       background-size: 100% 100%;
@@ -91,7 +99,6 @@
     &--3 {
       background: url("../img/city03.jpg") no-repeat;
       background-size: 100% 100%;
-      
       &:focus~.destinations__window--3 {
         display: block;
       }
