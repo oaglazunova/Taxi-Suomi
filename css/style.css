@@ -677,12 +677,7 @@ body {
 }
 
 .slider-wrapper {
-	width: 1440px;
-	height: 775px;
-	margin: 0 auto;
-	overflow: hidden;
-	position: relative;
-	background: #152740;
+	display: none;
 }
 
 .slide {
@@ -1135,6 +1130,16 @@ img:nth-child(1) {
 
 .btn--accent {
 	padding: 2rem 4rem;
+}
+
+.slider-wrapper {
+	display: block;
+	width: 1440px;
+	height: 775px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	background: #152740;
 }
 
 .destinations {

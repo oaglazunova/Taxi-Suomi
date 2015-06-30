@@ -46,13 +46,16 @@
 }
 
 .slider-wrapper {
-  width: 1440px;
-  height: 775px;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  
-  background: @primary--dark;
+  display: none;
+  @media(min-width: @screen--medium) {
+    display: block;
+    width: 1440px;
+    height: 775px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background: @primary--dark;
+  }
 }
 
 .slide {
