@@ -712,7 +712,7 @@ img:nth-child(1) {
 }
 
 .destinations {
-	padding: 0 0 500px;
+	padding: 0 0 550px;
 	position: relative;
 	z-index: 3;
 }
@@ -826,7 +826,7 @@ img:nth-child(1) {
 }
 
 .prices .header--h2 {
-	margin: 0 0 6rem;
+	margin: 0 0 3rem;
 }
 
 .prices__table {
@@ -1014,7 +1014,7 @@ img:nth-child(1) {
 @media (min-width: 700px) {
 
 .container {
-	width: 700px;
+	width: 690px;
 }
 
 .header--h2 {
@@ -1036,7 +1036,7 @@ img:nth-child(1) {
 }
 
 .destinations {
-	padding: 0 0 150px;
+	padding: 0 0 170px;
 }
 
 .destinations__cities {
@@ -1074,6 +1074,10 @@ img:nth-child(1) {
 
 .prices {
 	padding: 40px 0 80px;
+}
+
+.prices .header--h2 {
+	margin: 0 0 6rem;
 }
 
 .prices__table .col {
@@ -1148,7 +1152,7 @@ img:nth-child(1) {
 }
 
 .destinations {
-	padding: 0 0 380px;
+	padding: 0 0 350px;
 }
 
 .destinations__cities {
