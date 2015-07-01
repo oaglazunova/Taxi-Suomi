@@ -158,28 +158,28 @@
 
 
     <section class="booking">
-      <form>
+      <form id="form" method="post" name="contact_form" action="sendmail.php">
         <h2 class="header--h2">Оставить заявку</h2>
         <label>
           <span class="text">Имя</span>
-          <input type="text" name="Name" placeholder="Имя:">
+          <input id="name" type="text" name="Name" placeholder="Имя:">
         </label>
 
         <label>
           <span class="text">Email:</span>
-          <input type="email" name="email" placeholder="Email:">
+          <input id="email" type="email" name="email" placeholder="Email:">
         </label>
 
         <label>
           <span class="text">Ваш контактный телефон:</span>
-          <input type="tel" name="tel" placeholder="Телефон:">
+          <input id="tel" type="tel" name="tel" placeholder="Телефон:">
         </label>
 
         <div class="booking__dates">
           <div class="booking__col1">
             <label>
               <span class="text">Дата поездки:</span>
-              <input type="date" name="Check-in" data-constraints="@NotEmpty @Required @Date">
+              <input id="check-in" type="date" name="check-in" data-constraints="@NotEmpty @Required @Date">
             </label>
           </div>
 
@@ -187,7 +187,7 @@
           <div class="booking__col2">
             <label>
               <span class="text">Дата возвращения (если необходимо):</span>
-              <input type="date" name="Check-out" data-constraints="@NotEmpty @Date">
+              <input id="check-out" type="date" name="check-out" data-constraints="@NotEmpty @Date">
             </label>
           </div>
         </div>
@@ -196,7 +196,7 @@
           <div class="booking__col1">
             <label>
               <span class="text">Количество взрослых:&nbsp;</span>
-              <select name="Adults">
+              <select name="adults">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -212,7 +212,7 @@
           <div class="booking__col2">
             <label>
               <span class="text">Количество детей:&nbsp;</span>
-              <select name="Children">
+              <select name="children">
                 <option>0</option>
                 <option>1</option>
                 <option>2</option>
@@ -228,9 +228,9 @@
 
         <label>
           <span class="text">Комментарий:</span>
-          <textarea name="Message" placeholder="Сообщение:" data-constraints="@NotEmpty @Required @Length(min=20,max=999999)" rows="5" cols="60"></textarea>
-        </label>
-        <a href="#" class="btn--accent" data-type="submit">Отправить заявку</a>
+          <textarea id="message" name="message" placeholder="Сообщение:" rows="5" cols="60"></textarea>
+        </label>        
+        <input class="btn--accent" type="submit" name="submit" value="Отправить сообщение">
       </form>
     </section>
 
@@ -251,7 +251,14 @@
     </div>
   </footer>
 
-  <!-- <script src="js/slider.js"></script> -->
+  <script src="js/script.js"></script>
+  <script>   
+    var frmvalidator = new Validator("form");
+    frmvalidator.addValidation("name", "req", "Пожалуйста, укажите ваше имя");
+    frmvalidator.addValidation("email", "req", "Пожалуйста, укажите ваш email");
+    frmvalidator.addValidation("email", "email", "Введите правильный email");
+    frmvalidator.addValidation("tel", "req", "Введите ваш контактный телефон");
+  </script>
 
 </body>
 
