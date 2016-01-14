@@ -638,11 +638,18 @@ body {
 	display: flex;
 }
 
+.hidden {
+	border: 0;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+
 .page-header {
 	height: 700px;
 	position: relative;
 	background: #152740;
-	background: #152740 url("../img/bkg.jpg") no-repeat center center fixed;
+	background: #152740 url("../img/bkg.jpg") no-repeat 50% 50%;
 }
 
 .header--h1 {
@@ -655,7 +662,7 @@ body {
 	font-weight: bold;
 	text-align: center;
 	color: #f1ebe5;
-	text-shadow: 0 4px 9px #c4b59d, 0px -2px 1px #ffffff;
+	text-shadow: 0 4px 9px #c4b59d, 0px -2px 1px #fff;
 	position: absolute;
 	top: 0;
 	left: 0;
